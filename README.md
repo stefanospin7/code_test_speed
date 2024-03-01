@@ -1,2 +1,2 @@
-# CODE BENCHMARKS
-This is just a personal python benchmark for single core and multi core loops 
+# CODE TEST SPEED
+This repo contains some code test speed
