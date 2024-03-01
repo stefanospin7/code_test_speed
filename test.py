@@ -23,7 +23,6 @@ print(f"Execution time for {num_iterations} iterations: {execution_time} seconds
 '''
 
 # multi core
-
 def benchmark_nested_loops(num_iterations):
     # Nested loops
     for _ in range(num_iterations):
@@ -41,7 +40,8 @@ def parallel_benchmark(num_iterations, num_processes):
     total_execution_time = end_time - start_time
     return total_execution_time
 
-num_iterations = 200000
-num_processes = multiprocessing.cpu_count()  # Use all available CPU cores
-execution_time = parallel_benchmark(num_iterations, num_processes)
-print(f"Execution time for {num_iterations} iterations with {num_processes} processes: {execution_time} seconds")
+if __name__ == '__main__':
+    num_iterations = 200000
+    num_processes = multiprocessing.cpu_count()  # Use all available CPU cores
+    execution_time = parallel_benchmark(num_iterations, num_processes)
+    print(f"Execution time for {num_iterations} iterations with {num_processes} processes: {execution_time} seconds")
