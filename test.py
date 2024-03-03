@@ -2,8 +2,7 @@ import time
 import multiprocessing
 
 
-# single core
-'''
+
 def benchmark_nested_loops(num_iterations):
     start_time = time.time()
 
@@ -20,8 +19,8 @@ def benchmark_nested_loops(num_iterations):
 num_iterations = 50000
 execution_time = benchmark_nested_loops(num_iterations)
 print(f"Execution time for {num_iterations} iterations: {execution_time} seconds")
-'''
 
+'''
 # multi core
 def benchmark_nested_loops(num_iterations):
     # Nested loops
@@ -45,3 +44,4 @@ if __name__ == '__main__':
     num_processes = multiprocessing.cpu_count()  # Use all available CPU cores
     execution_time = parallel_benchmark(num_iterations, num_processes)
     print(f"Execution time for {num_iterations} iterations with {num_processes} processes: {execution_time} seconds")
+'''
